@@ -21,7 +21,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _GroundTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 819fb9c1d8fce884fbb7b8c76cd8865a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -29,7 +29,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _SnowTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: ab9088ee29aaadf40b57c420447a9c7e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Splat:
@@ -38,12 +38,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Displacement: 0.24
+    - _Displacement: 0.2
     - _Glossiness: 0
     - _Metallic: 0
-    - _Tess: 32
+    - _Tess: 16
     m_Colors:
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _GroundColor: {r: 1, g: 0.9245337, b: 0, a: 1}
+    - _GroundColor: {r: 1, g: 1, b: 1, a: 1}
     - _SnowColor: {r: 0.9339623, g: 0.9339623, b: 0.9339623, a: 1}
   m_BuildTextureStacks: []
