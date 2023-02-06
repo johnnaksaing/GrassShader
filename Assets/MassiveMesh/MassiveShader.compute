@@ -1,0 +1,27 @@
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+struct BulletState
+{
+    float3 position;
+    float3 forward;
+};
+
+uint numBullets;
+float deltaTime;
+half moveSpeed;
+float3 targetPosition;
+float3 normalizeSafe(float3 v)
+{
+    return length(v) > 0 ? normalize(v) : 0;
+}
+RWStructuredBuffer<BulletState> bulletBuffer;
+[numthreads(8, 8, 1)]
+void CSMain(uint3 id : SV_DispatchThreadID)
+{
+    // TODO: insert actual code here!
+    uint bulletIdx = id.x;
+    BulletState bulletState = bulletBuffer[bulletIdx];
+    bulletState.position = bulletState.position + (bulletState.forward * moveSpeed * deltaTime);
+    bulletBuffer[bulletIdx] = bulletState;
+}
