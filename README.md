@@ -10,3 +10,4 @@ Plan
 2. day 1 : create a grass shader
 3. day 2 : make it interactable
 4. day 3 : do some other things
+5. day 4 : make a document
