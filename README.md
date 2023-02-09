@@ -11,3 +11,6 @@ Plan
 3. day 2 : make it interactable
 4. day 3 : do some other things
 5. day 4 : make a document
+
+Plan
+1. day 0 : learn compute shader
