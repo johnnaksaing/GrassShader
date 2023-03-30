@@ -24,3 +24,4 @@ Plan
 
 Plan
 1. day 0 : learn compute shader
+ 
